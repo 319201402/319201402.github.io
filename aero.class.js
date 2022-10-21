@@ -53,7 +53,7 @@ class Aero extends Frame{
 		var borders=['sw','w','nw','n','ne','e','se','s'].map(function (n,x){return '<div class="window-borders wb-'+n+'" data-dir="'+(x-5)+'"></div>'}).join('');
 		shadow.innerHTML=`<style>*{box-sizing:border-box}
 .window-backdrop{display:none;position:fixed;left:0;top:0;width:100%;height:100%;z-index:998}
-.window-frame{position:absolute;width:300px;height:200px;border:solid 1px #333;border-radius:7px;background:rgba(187, 231, 251,.9) linear-gradient(45deg,#fff,transparent 10%,transparent 20%,rgba(255,255,255,.8) 30%,transparent 50%,transparent 60%,rgba(0,0,0,.1) 70%,transparent 80%,rgba(255,255,255,.8) 90%,transparent);box-sizing:border-box;box-shadow:inset 0 0 0 1px rgba(255,255,255,.8),0 0 15px #000;-webkit-user-select:none;z-index:999}
+.window-frame{position:absolute;width:300px;height:200px;border:solid 1px #333;border-radius:7px;background:rgba(187, 231, 251,.1) linear-gradient(45deg,#fff,transparent 10%,transparent 20%,rgba(255,255,255,.8) 30%,transparent 50%,transparent 60%,rgba(0,0,0,.1) 70%,transparent 80%,rgba(255,255,255,.8) 90%,transparent);backdrop-filter:blur(3px);box-sizing:border-box;box-shadow:inset 0 0 0 1px rgba(255,255,255,.8),0 0 15px #000;-webkit-user-select:none;z-index:999}
 .maximize{left:0;top:0;width:100%;height:100%}
 .window-header{font:12px/29px sans-serif;text-indent:7px;position:relative;-webkit-user-select:none}
 .window-header-drag{height:29px}
